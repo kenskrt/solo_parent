@@ -111,15 +111,17 @@ $results = Joiningtables($id);
     .signature {
         position: absolute;
         bottom: 6px;
-        left: 6px;
+        left: 10px;
+        width: 40mm; /* Add width to match the line */
         font-size: 8px;
+        text-align: center; /* Center the text and line */
     }
 
     .signature .line {
         display: block;
-        width: 50mm;
+        width: 40mm;
         border-top: 1px solid black;
-        margin-top: 2px;
+        margin: 0 auto 2px auto; /* Center the line */
     }
 
     .logo {
@@ -189,7 +191,8 @@ $results = Joiningtables($id);
                     </div>
 
                     <div class="signature">
-                        SIGNATURE:<br><span class="line"></span>
+                        <span class="line"></span>
+                        SIGNATURE:
                     </div>
                     <div class="card">
                         <img src="http://localhost/solo_parent/form/img/logo1.png" alt="Below Logo" class="bottom-logo">
